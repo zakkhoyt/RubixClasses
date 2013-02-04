@@ -8,6 +8,24 @@
 
 #import "VWWFace.h"
 
+@interface VWWFace ()
+@property (nonatomic) NSUInteger size;
+@property (nonatomic) VWWFaceType face;
+@end
+
 @implementation VWWFace
 
+-(id)initWithSize:(NSUInteger)aSize face:(VWWFaceType)aFace color:(VWWColorType)aColor{
+    self = [super init];
+    if(self){
+        _size = aSize;
+        [self initializeClass];
+        
+    }
+    return self;
+}
+
+-(void)initializeClass{
+    
+}
 @end

@@ -24,6 +24,9 @@
 		C6CC9DF016C029FD00099AFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CC9DC816C029FD00099AFD /* Foundation.framework */; };
 		C6CC9DF816C029FD00099AFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6CC9DF616C029FD00099AFD /* InfoPlist.strings */; };
 		C6CC9DFB16C029FD00099AFD /* RubixClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CC9DFA16C029FD00099AFD /* RubixClassesTests.m */; };
+		C6CC9E0616C02A7900099AFD /* VWWCube.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CC9E0516C02A7900099AFD /* VWWCube.m */; };
+		C6CC9E0B16C02C7900099AFD /* VWWSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CC9E0A16C02C7900099AFD /* VWWSquare.m */; };
+		C6CC9E0E16C02D0A00099AFD /* VWWFace.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CC9E0D16C02D0A00099AFD /* VWWFace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,13 @@
 		C6CC9DF716C029FD00099AFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6CC9DF916C029FD00099AFD /* RubixClassesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubixClassesTests.h; sourceTree = "<group>"; };
 		C6CC9DFA16C029FD00099AFD /* RubixClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubixClassesTests.m; sourceTree = "<group>"; };
+		C6CC9E0416C02A7900099AFD /* VWWCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCube.h; sourceTree = "<group>"; };
+		C6CC9E0516C02A7900099AFD /* VWWCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCube.m; sourceTree = "<group>"; };
+		C6CC9E0716C02B1200099AFD /* VWWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUtilities.h; sourceTree = "<group>"; };
+		C6CC9E0916C02C7900099AFD /* VWWSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSquare.h; sourceTree = "<group>"; };
+		C6CC9E0A16C02C7900099AFD /* VWWSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSquare.m; sourceTree = "<group>"; };
+		C6CC9E0C16C02D0A00099AFD /* VWWFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWFace.h; sourceTree = "<group>"; };
+		C6CC9E0D16C02D0A00099AFD /* VWWFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWFace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +129,14 @@
 		C6CC9DCC16C029FD00099AFD /* RubixClasses */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC9DCD16C029FD00099AFD /* Supporting Files */,
+				C6CC9E0816C02C5800099AFD /* Cube */,
 				C6CC9DD516C029FD00099AFD /* VWWAppDelegate.h */,
 				C6CC9DD616C029FD00099AFD /* VWWAppDelegate.m */,
 				C6CC9DDE16C029FD00099AFD /* MainStoryboard_iPhone.storyboard */,
 				C6CC9DE116C029FD00099AFD /* MainStoryboard_iPad.storyboard */,
 				C6CC9DE416C029FD00099AFD /* VWWViewController.h */,
 				C6CC9DE516C029FD00099AFD /* VWWViewController.m */,
-				C6CC9DCD16C029FD00099AFD /* Supporting Files */,
 			);
 			path = RubixClasses;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 		C6CC9DCD16C029FD00099AFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC9E0716C02B1200099AFD /* VWWUtilities.h */,
 				C6CC9DCE16C029FD00099AFD /* RubixClasses-Info.plist */,
 				C6CC9DCF16C029FD00099AFD /* InfoPlist.strings */,
 				C6CC9DD216C029FD00099AFD /* main.m */,
@@ -161,6 +173,19 @@
 				C6CC9DF616C029FD00099AFD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6CC9E0816C02C5800099AFD /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC9E0916C02C7900099AFD /* VWWSquare.h */,
+				C6CC9E0A16C02C7900099AFD /* VWWSquare.m */,
+				C6CC9E0C16C02D0A00099AFD /* VWWFace.h */,
+				C6CC9E0D16C02D0A00099AFD /* VWWFace.m */,
+				C6CC9E0416C02A7900099AFD /* VWWCube.h */,
+				C6CC9E0516C02A7900099AFD /* VWWCube.m */,
+			);
+			name = Cube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +303,9 @@
 				C6CC9DD316C029FD00099AFD /* main.m in Sources */,
 				C6CC9DD716C029FD00099AFD /* VWWAppDelegate.m in Sources */,
 				C6CC9DE616C029FD00099AFD /* VWWViewController.m in Sources */,
+				C6CC9E0616C02A7900099AFD /* VWWCube.m in Sources */,
+				C6CC9E0B16C02C7900099AFD /* VWWSquare.m in Sources */,
+				C6CC9E0E16C02D0A00099AFD /* VWWFace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

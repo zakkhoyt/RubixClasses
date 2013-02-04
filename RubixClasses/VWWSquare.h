@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface VWWSquare : NSObject
+// Indivicual square colors
+typedef enum{
+    kVWWColorTypeBlue = 0x00,
+    kVWWColorTypeGreen,
+    kVWWColorTypeOrange,
+    kVWWColorTypeRed,
+    kVWWColorTypeWhite,
+    kVWWColorTypeYellow,
+} VWWColorType;
 
+@interface VWWSquare : NSObject
+-(id)initWithColor:(VWWColorType)aColor;
 @end

@@ -8,6 +8,21 @@
 
 #import "VWWSquare.h"
 
-@implementation VWWSquare
+@interface VWWSquare ()
+@property (nonatomic) VWWColorType color;
+@end
 
+@implementation VWWSquare
+-(id)initWithColor:(VWWColorType)aColor{
+    self = [super init];
+    if(self){
+        _color = aColor;
+        [self initializeClass];
+    }
+    return self;
+}
+
+-(void)initializeClass{
+    
+}
 @end
